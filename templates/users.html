@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Registered Users{% endblock %}
+
+{% block content %}
+  <h1>Registered Users</h1>
+  <ul>
+    {% for name, org in users.items() %}
+      <li>{{ name }} - {{ org }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
